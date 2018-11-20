@@ -1,3 +1,6 @@
+#By Iverson
+#This app is to capature screenshot after press any keys. Original implemented to use for auto uploading PowerBI dashboard screenshot
+
 import time
 import pyautogui
 from PIL import ImageGrab
@@ -7,13 +10,13 @@ def keyStroke(key, interval):
     time.sleep(interval)
 
 def screenCapature(id, area, path):
-    ic = ImageGrab.grab(area)
-    ic.save(path + "z" + str(id) + ".png")
+    sc = ImageGrab.grab(area)
+    sc.save(path + "z" + str(id) + ".png")
 
 def readParm(file):
-    config = open(file, mode='r')
+    configfile = open(file, mode='r')
     parmlist = {}
-    for parm in config.readlines():
+    for parm in configfile.readlines():
         rawparmlist = str.split(parm, "=")
         parmlist[rawparmlist[0].strip()] = rawparmlist[1].strip()   #remove empty space
     return parmlist
