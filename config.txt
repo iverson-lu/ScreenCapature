@@ -1,0 +1,5 @@
+area = (0,0,1920,1080)
+key = right
+interval = 1
+outputpath = .\
+count = 3
