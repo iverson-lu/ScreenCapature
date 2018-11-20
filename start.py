@@ -1,5 +1,5 @@
 #By Iverson
-#This app is to capature screenshot after press any keys. Original implemented to use for auto uploading PowerBI dashboard screenshot
+#This app is to capature screenshot after press any keys. Original implemented to use for auto uploading PowerBI dashboard screenshots
 
 import time
 import pyautogui
